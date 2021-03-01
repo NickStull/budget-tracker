@@ -39,9 +39,11 @@ function checkDatabase() {
   const store = transaction.objectStore("pending");
   // get all records from store and set to a variable
   const getAll = store.getAll();
+  console.log("1HELLOOOOO");
 
   getAll.onsuccess = function() {
     if (getAll.result.length > 0) {
+      console.log("2");
       fetch("/api/transaction/bulk", {
         method: "POST",
         body: JSON.stringify(getAll.result),
@@ -57,7 +59,7 @@ function checkDatabase() {
 
         // access your pending object store
         const store = transaction.objectStore("pending");
-
+        console.log("3")
         // clear all items in your store
         store.clear();
       });
