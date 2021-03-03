@@ -45,4 +45,3 @@ http://www.wtfpl.net/about/
 If you have any questions about this repo, or if you would like to contribute to this project, you can contact me directly at stull.nicholas@gmail.com.
 
 You can also find more of my work at [GitHub](https://github.com/nickstull/)!
-
